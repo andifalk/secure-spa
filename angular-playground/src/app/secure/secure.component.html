@@ -1,0 +1,17 @@
+<h2>Secure Page</h2>
+
+<h3>URL</h3>
+<p><a [href]="unsafeUrl" target="_blank">Click Me (Unsafe URL)</a></p>
+<p><a [href]="safeUrl" target="_blank">Click Me (Safe URL)</a></p>
+
+<h3>HTML</h3>
+<h4>Output Encoded</h4>
+<div>{{unsafeHtml}}</div>
+<h4>Sanitized</h4>
+<div [innerHTML]="unsafeHtml"></div>
+<div [innerHTML]="getHtmlSnippet()"></div>
+
+<h3>iFrame</h3>
+<iframe [src]="unsafeUrl">
+
+

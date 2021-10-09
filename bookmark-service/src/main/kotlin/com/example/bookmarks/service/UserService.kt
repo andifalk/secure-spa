@@ -13,7 +13,9 @@ internal class UserService(
     private val idGenerator: IdGenerator
 ) {
 
-    fun findByEmail(email: String) = userEntityRepository.findOneByEmail(email)
+    fun findByEmail(email: String) = userEntityRepository.findOneByEmail(email)?.let {
+        User(it.identifier, it.email, it.firstName, it.lastName, it.password, it.roles)
+    }
 
     @PreAuthorize("hasRole('ADMIN')")
     fun findAllUsers() = userEntityRepository.findAll()
