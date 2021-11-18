@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script
+            src="jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <title>Cat Pictures Forum</title>
+</head>
+
+<body onload="transfer();">
+<script>
+    function transfer() {
+        var transfer = { "from": "1", "to": "2", "amount": "500" };
+        $.ajax({
+            type: "POST",
+            url: "http://server.local:8080/api/transfer",
+            xhrFields: {
+                withCredentials: true
+            },
+            // The key needs to match your method's input parameter (case-sensitive).
+            data: JSON.stringify(transfer),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data){console.log(data);},
+            error: function(errMsg) {
+                console.error(errMsg);
+            }
+        });
+    }
+</script>
+
+<div class="container">
+    <h1>A forum of Cat pictures</h1>
+
+    <h2>My nice cat</h2>
+    <p><img title="A Nice Cat" alt="A Nice Cat" src="images/cat1.jpg" width="400px" height="200px"></p>
+
+    <hr>
+
+    <p>
+        <a href="index.html" class="btn btn-primary btn-lg active">Back</a>
+    </p>
+</div>
+</body>
+</html>
