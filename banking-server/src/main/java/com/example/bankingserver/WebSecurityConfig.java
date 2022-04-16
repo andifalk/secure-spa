@@ -25,16 +25,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-//                .csrf(csrf -> csrf
-//                        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-//                )
+                //.csrf().disable()
+                .csrf(csrf -> csrf
+                        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                )
                 .cors(withDefaults())
                 .authorizeRequests(authorize -> authorize
-                        .antMatchers("/index.html", "/forum-get.html", "forum-post.html").permitAll()
+                        .antMatchers("/","/index.html", "/forum-get.html", "/forum-post.html", "/xss-forum-post.html",
+                                "/v3/api-docs", "/swagger-ui.html").permitAll()
                         .anyRequest().authenticated()
                 )
-                .httpBasic(withDefaults());
+                .httpBasic(withDefaults()).formLogin(withDefaults());
     }
 
     @Bean

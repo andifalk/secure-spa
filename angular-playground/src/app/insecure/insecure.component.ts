@@ -16,8 +16,8 @@ export class InsecureComponent {
     this.elementRef.nativeElement.appendChild(s);
    }
 
-  unsafeUrl = 'javascript:alert("iFrame XSS")'
-  unsafeHtml = "<em><script>alert('XSS')</script>Some Italic Text</em>";
+  unsafeUrl = 'javascript:alert("Hello XSS")'
+  unsafeHtml = "<em><script>alert('HTML XSS')</script>Some Italic Text</em>";
   safeResourceUrl:SafeScript = this.sanitizer.bypassSecurityTrustResourceUrl(this.unsafeUrl)
   safeHtml: SafeValue = this.sanitizer.bypassSecurityTrustHtml(this.unsafeHtml);
   safeUrl: SafeUrl = this.sanitizer.bypassSecurityTrustUrl(this.unsafeUrl)

