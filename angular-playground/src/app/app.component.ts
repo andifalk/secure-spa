@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { trustedTypes } from 'trusted-types';
+import * as DOMPurify from 'dompurify';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'angular-playground';
 }

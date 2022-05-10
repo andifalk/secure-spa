@@ -71,6 +71,7 @@
               "browserTarget": "angular-playground:build:production"
             },
             "development": {
+              "proxyConfig": "config/proxy.conf.js",
               "browserTarget": "angular-playground:build:development"
             }
           },

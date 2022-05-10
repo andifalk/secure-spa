@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnInit, Sanitizer, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { DomSanitizer, SafeHtml, SafeScript, SafeUrl, SafeValue } from '@angular/platform-browser';
+import { trustedTypes } from 'trusted-types';
+import * as DOMPurify from 'dompurify';
 
 @Component({
   selector: 'app-insecure',
