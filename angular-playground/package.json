@@ -1,6 +1,6 @@
 {
   "name": "angular-playground",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,11 +18,8 @@
     "@angular/platform-browser": "~13.3.3",
     "@angular/platform-browser-dynamic": "~13.3.3",
     "@angular/router": "~13.3.3",
-    "@sentry/angular": "^6.19.7",
-    "@sentry/tracing": "^6.19.7",
     "dompurify": "^2.3.6",
     "rxjs": "~6.6.0",
-    "trusted-types": "^2.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

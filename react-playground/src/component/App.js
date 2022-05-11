@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    console.log('A name was submitted: ' + this.state.value);
     event.preventDefault();
   }
 
@@ -40,8 +40,8 @@ export default class App extends React.Component {
         <p>User Input: {this.state.value}</p>
         
         <h4>Rendered HTML</h4>
-        {/*<p dangerouslySetInnerHTML={{__html: this.state.value}}></p>*/}
-        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.value)}}></p>
+        <p dangerouslySetInnerHTML={{__html: this.state.value}}></p>
+        {/*<p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.value)}}></p>*/}
         <span dangerouslySetInnerHTML={{__html: this.state.value}}></span>
         <span dangerouslySetInnerHTML={{__html: "<ul><li><i>mytext<iframe src=\"javascript:alert('iframe xss')\"></i></li></ul>"}}></span>
         <span dangerouslySetInnerHTML={{__html: DOMPurify.sanitize("<ul><li><i>mytext<script>alert('xss')</script></i></li></ul>")}}></span>

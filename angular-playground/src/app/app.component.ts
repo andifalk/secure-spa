@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { trustedTypes } from 'trusted-types';
-import * as DOMPurify from 'dompurify';
 
 @Component({
   selector: 'app-root',
