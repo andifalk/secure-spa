@@ -2,11 +2,13 @@
 
 Security Traps in Single Page Applications like
 - Cross-Site Scripting (XSS)
-- Cross-Site Request Forgery (CSRF) 
-- Authentication Flaws
+- Cross-Site Request Forgery (CSRF)
 - ...
 
-Specific hints for using SPA frameworks and libs securely like
-- Angular
-- Vue.js
-- React
+## Demos and Playgrounds
+
+Here you find some demos & playgrounds
+- Javascript Playground: Some basic xss demos being protected by DOMPurify and Trusted Types
+- Angular Playground showing some security stuff like output encoding and sanitizing (automatic & manually)
+- React Playground showing similar security stuff like output encoding and manually sanitizing
+- Banking Server: Demo to show CSRF attack in action (real customer client, attacker client & rest api server)
