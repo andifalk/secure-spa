@@ -40,13 +40,13 @@ export default class App extends React.Component {
         <p>User Input: {this.state.value}</p>
         
         <h4>Rendered HTML</h4>
-        <p dangerouslySetInnerHTML={{__html: this.state.value}}></p>
+        Dangerous 1: <p dangerouslySetInnerHTML={{__html: this.state.value}}></p>
         {/*<p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.state.value)}}></p>*/}
-        <span dangerouslySetInnerHTML={{__html: this.state.value}}></span>
+        Dangerous 2: <span dangerouslySetInnerHTML={{__html: this.state.value}}></span>
         <span dangerouslySetInnerHTML={{__html: "<ul><li><i>mytext<iframe src=\"javascript:alert('iframe xss')\"></i></li></ul>"}}></span>
         <span dangerouslySetInnerHTML={{__html: DOMPurify.sanitize("<ul><li><i>mytext<script>alert('xss')</script></i></li></ul>")}}></span>
         {/*<p dangerouslySetInnerHTML={{__html: "<img src=\"nonexistent.png\" onerror=\"alert('This restaurant got voted worst in town!');\" />"}}></p>*/}
-        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize("<img src=\"nonexistent.png\" onerror=\"alert('This restaurant got voted worst in town!');\" />")}}></p>
+        Sanitized: <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize("<img src=\"nonexistent.png\" onerror=\"alert('This restaurant got voted worst in town!');\" />")}}></p>
         
         <h4>Some URLs</h4>
         <p>
