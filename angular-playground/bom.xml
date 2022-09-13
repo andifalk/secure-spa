@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.3" serialNumber="urn:uuid:81309982-90e6-4469-8894-9dc275dd98df" version="1">
+    <metadata>
+        <timestamp>2022-09-13T12:04:32.873Z</timestamp>
+        <tools>
+            <tool>
+                <vendor>CycloneDX</vendor>
+                <name>Node.js module</name>
+                <version>3.10.6</version>
+            </tool>
+        </tools>
+        <component type="application" bom-ref="pkg:npm/angular-playground@1.0.0">
+            <name>angular-playground</name>
+            <version>1.0.0</version>
+            <description>
+                <![CDATA[This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.]]>
+            </description>
+            <purl>pkg:npm/angular-playground@1.0.0</purl>
+        </component>
+    </metadata>
+    <components>
+        <component type="library" bom-ref="pkg:npm/%40angular/animations@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>animations</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - animations integration with web-animations]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">4f9e05e4dbd7d17323e8bee176a61839116363a11c90e59a2bde9b17d42a24b2b0211562084191e58cda1c68506808a9bd427e904c0df9b9d104958e68d6e653</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/animations@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/tslib@2.3.1">
+            <author>Microsoft Corp.</author>
+            <name>tslib</name>
+            <version>2.3.1</version>
+            <description>
+                <![CDATA[Runtime library for TypeScript helper functions]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">efb11bc8f3e9333f8544546e00595632d9a051619ef54386d99db936a0b08888d184e7f988a1aecd27b93f6c3595aabe164472e29f8f0ae5642521a4cd310a57</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>0BSD</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/tslib@2.3.1</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://www.typescriptlang.org/</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/Microsoft/TypeScript/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/Microsoft/tslib.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/common@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>common</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - commonly needed directives and services]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">757086b8cfd887d07c3955471df3ee5cb61dbb4a257a62a6b982d95c6a2acb37985393a943afaa707613ae5444916a45f5063ea64d9ec1f33d1e47b55043441c</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/common@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/compiler@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>compiler</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - the compiler library]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">72c9efa29cb96ba72d753eec1e0c209f7c119e2f94224db3beced662cc7e82d2d3747ed23e0efc08dd17651fca435e36a8bb6e3279a454e3770f77a39aa0bdc6</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/compiler@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/core@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>core</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - the core framework]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">9b4d1664bf9d7fdd108eb366038dd6f2848fd61c9e3e8117830dfa25c14b43ed8848ed47beaa1eb8a5c871cc8840aa42b90f552cdbf9a6d9538a8ea98e6702aa</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/core@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/forms@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>forms</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - directives and services for creating forms]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">29501de084c45273ff30b3530db4d610ca1821980a6b0be868dbb89c13f40c0719b000e60796ba20f61c83a1ab809fad78dd129e9882c4abead614484e3dddee</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/forms@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/platform-browser@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>platform-browser</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - library for using Angular in a web browser]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">cd8581f45b594191213d5d8fbb36a85d60a1592fbba3848ffb4b05f212dd74634e7b37f516c28aaea0e1c98b50620676a903ec4beb8315f915af2e5da6900b51</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/platform-browser@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/platform-browser-dynamic@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>platform-browser-dynamic</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - library for using Angular in a web browser with JIT compilation]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">0914966c98a885fcf8281538b6cda4ab60769404c0a4c786eaebb1817c0d240114927eb71186eb15563d253680a7267b5feddd503659b5cb1f36642bb8ad94c5</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/platform-browser-dynamic@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/%40angular/router@14.2.0">
+            <author>angular</author>
+            <group>@angular</group>
+            <name>router</name>
+            <version>14.2.0</version>
+            <description>
+                <![CDATA[Angular - the routing library]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">4afb664a544221678b85b5d8874f56ee5b8f293b6964bd7a3c1e036d3dd555f665b763df332b3fb4098e0af0a13718e43a057bc8419aaa4956c3fd702b179196</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/%40angular/router@14.2.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular/tree/main/packages/router</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/dompurify@2.4.0">
+            <author>Mario Heiderich</author>
+            <name>dompurify</name>
+            <version>2.4.0</version>
+            <description>
+                <![CDATA[DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. It's written in JavaScript and works in all modern browsers (Safari, Opera (15+), Internet Explorer (10+), Firefox and Chrome - as well as almost anything else using Blink or WebKit). DOMPurify is written by security people who have vast background in web attacks and XSS. Fear not.]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">05ef6d6d031976ce1adc2eb14e6cfaf0d94c7de38d03fff874e6af97fd6b370e7413efd03b4295a5b714d0f71a5b49ec431bab5e5b3d66872a17193c47699610</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <name>(MPL-2.0 OR Apache-2.0)</name>
+                </license>
+            </licenses>
+            <purl>pkg:npm/dompurify@2.4.0</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/cure53/DOMPurify</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/cure53/DOMPurify/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git://github.com/cure53/DOMPurify.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/rxjs@6.6.7">
+            <author>Ben Lesh</author>
+            <name>rxjs</name>
+            <version>6.6.7</version>
+            <description>
+                <![CDATA[Reactive Extensions for modern JavaScript]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">853770afeef260d213e67e00318a7ce4a03acb0d956b414b6b7460baf6e96b85b7239c729da059a38d5c3375ccfb843a7d1323dec058211d5502664c5d826f45</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/rxjs@6.6.7</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/ReactiveX/RxJS</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/ReactiveX/RxJS/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/reactivex/rxjs.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/tslib@1.14.1">
+            <author>Microsoft Corp.</author>
+            <name>tslib</name>
+            <version>1.14.1</version>
+            <description>
+                <![CDATA[Runtime library for TypeScript helper functions]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">efb11bc8f3e9333f8544546e00595632d9a051619ef54386d99db936a0b08888d184e7f988a1aecd27b93f6c3595aabe164472e29f8f0ae5642521a4cd310a57</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>0BSD</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/tslib@1.14.1</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://www.typescriptlang.org/</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/Microsoft/TypeScript/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git+https://github.com/Microsoft/tslib.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component type="library" bom-ref="pkg:npm/zone.js@0.11.4">
+            <author>Brian Ford</author>
+            <name>zone.js</name>
+            <version>0.11.4</version>
+            <description>
+                <![CDATA[Zones for JavaScript]]>
+            </description>
+            <hashes>
+                <hash alg="SHA-512">0c387601bf80fc1fbd989c9a8cf8c714f59f614d47fa976e9f8c279e4d0e7104cd8de9b55d0499d820d6fab7d91140e3bf9335f5206a0248d98b4c79c2e07943</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>MIT</id>
+                </license>
+            </licenses>
+            <purl>pkg:npm/zone.js@0.11.4</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://github.com/angular/angular#readme</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/angular/angular/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>git://github.com/angular/angular.git</url>
+                </reference>
+            </externalReferences>
+        </component>
+    </components>
+    <dependencies>
+        <dependency ref="pkg:npm/tslib@2.3.1"/>
+        <dependency ref="pkg:npm/%40angular/animations@14.2.0">
+            <dependency ref="pkg:npm/tslib@2.3.1"/>
+        </dependency>
+        <dependency ref="pkg:npm/%40angular/common@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/compiler@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/core@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/forms@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/platform-browser@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/platform-browser-dynamic@14.2.0"/>
+        <dependency ref="pkg:npm/%40angular/router@14.2.0"/>
+        <dependency ref="pkg:npm/dompurify@2.4.0"/>
+        <dependency ref="pkg:npm/tslib@1.14.1"/>
+        <dependency ref="pkg:npm/rxjs@6.6.7">
+            <dependency ref="pkg:npm/tslib@1.14.1"/>
+        </dependency>
+        <dependency ref="pkg:npm/zone.js@0.11.4"/>
+        <dependency ref="pkg:npm/angular-playground@1.0.0">
+            <dependency ref="pkg:npm/%40angular/animations@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/common@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/compiler@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/core@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/forms@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/platform-browser@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/platform-browser-dynamic@14.2.0"/>
+            <dependency ref="pkg:npm/%40angular/router@14.2.0"/>
+            <dependency ref="pkg:npm/dompurify@2.4.0"/>
+            <dependency ref="pkg:npm/rxjs@6.6.7"/>
+            <dependency ref="pkg:npm/zone.js@0.11.4"/>
+        </dependency>
+    </dependencies>
+</bom>
