@@ -1,0 +1,10 @@
+"development": {
+    "proxyConfig": "config/proxy.conf.js",
+    "browserTarget": "angular-playground:build:development",
+    "headers": {
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Content-Security-Policy": "default-src 'self'; style-src 'self' 'unsafe-inline';script-src-elem http://localhost:4200/runtime.js http://localhost:4200/polyfills.js http://localhost:4200/styles.js http://localhost:4200/vendor.js http://localhost:4200/main.js https:;connect-src https: ws:; img-src data: http: https:; report-uri https://andifalk.report-uri.com/r/d/csp/enforce",
+        "Report-To": "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://andifalk.report-uri.com/a/d/g'}],'include_subdomains':true}",
+        "NEL": "{'report_to':'default','max_age':31536000,'include_subdomains':true}"             
+      }
+  }

@@ -1,17 +1,14 @@
 <h2>Secure Page</h2>
 
-<h3>URL</h3>
-<p><a [href]="unsafeUrl" target="_blank">Click Me (Unsafe URL)</a></p>
-<p><a [href]="safeUrl" target="_blank">Click Me (Safe URL)</a></p>
+<h3>User Input</h3>
 
-<h3>HTML</h3>
-<h4>Output Encoded</h4>
-<div>{{unsafeHtml}}</div>
-<h4>Sanitized</h4>
-<div [innerHTML]="unsafeHtml"></div>
-<div [innerHTML]="getHtmlSnippet()"></div>
+<p><textarea id="name" cols="50" rows="10" [formControl]="name"></textarea></p>
+<p>Output Encoded Input Value: {{ name.value }}</p>    
+Sanitized Input Value: <div [innerHTML]="name.value"></div>
 
-<h3>iFrame</h3>
-<iframe [src]="unsafeUrl">
+<p><a [href]="name.value">Click Me (Input Value)</a></p>
 
+<p>Output Encoded Query Param Value: {{ urlQueryValue }}</p>    
+Sanitized Query Param Value: <div [innerHTML]="urlQueryValue"></div>
 
+<p><a [href]="urlQueryValue">Click Me (Query Param)</a></p>

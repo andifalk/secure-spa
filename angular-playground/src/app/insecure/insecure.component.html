@@ -1,19 +1,20 @@
 <h2>Insecure Page</h2>
 
+<h3>User Input</h3>
+
+<p>Output Encoded Value: {{ urlQueryValue }}</p>    
+Unsanitized Value: 
+<div [innerHTML]="unsafeHtmlName"></div>
+
 <h3>URL</h3>
 <p><a [href]="safeUrl">Click Me</a></p>
 
-<h3>HTML</h3>
-<h4>Output Encoded</h4>
-<div>{{safeHtml}}</div>
-<h4>Sanitized</h4>
-<div [innerHTML]="safeHtml"></div>
-<div [innerHTML]="getHtmlSnippet()"></div>
 <p #myref></p>
 
+<!--
 <h3>iFrame</h3>
 <iframe [src]="safeResourceUrl">
-
+-->
 
 
 
