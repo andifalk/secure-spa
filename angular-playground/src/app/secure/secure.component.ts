@@ -21,7 +21,7 @@ export class SecureComponent implements OnInit {
     );
   }
 
-  name = new FormControl('Test');
+  name = new FormControl("<em><script>alert('XSS')</script>Some Italic Text</em>");
   urlQueryValue: string = '';
   unsafeUrl = "javascript:alert('XSS')"
   unsafeHtml = "<em><script>alert('XSS')</script>Some Italic Text</em>";
