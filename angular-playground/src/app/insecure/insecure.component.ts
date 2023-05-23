@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, Sanitizer, ViewChild } fr
 import { FormControl } from '@angular/forms';
 import { DomSanitizer, SafeHtml, SafeScript, SafeUrl, SafeValue } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
+import * as Sentry from "@sentry/angular-ivy";
 import * as DOMPurify from 'dompurify';
 
 @Component({
@@ -9,6 +10,7 @@ import * as DOMPurify from 'dompurify';
   templateUrl: './insecure.component.html',
   styleUrls: ['./insecure.component.css']
 })
+@Sentry.TraceClassDecorator()
 export class InsecureComponent implements OnInit, AfterViewInit {
   @ViewChild('myref') paragraphRef!: ElementRef;
   constructor(private sanitizer: DomSanitizer, private route: ActivatedRoute) {}
@@ -24,7 +26,7 @@ export class InsecureComponent implements OnInit, AfterViewInit {
       }
     );
   }
-  
+
   urlQueryValue: string = '';
 
   name = new FormControl('Test');

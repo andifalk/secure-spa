@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import * as Sentry from "@sentry/angular-ivy";
 
 @Component({
   selector: 'app-secure',
   templateUrl: './secure.component.html',
   styleUrls: ['./secure.component.css']
 })
+@Sentry.TraceClassDecorator()
 export class SecureComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {}

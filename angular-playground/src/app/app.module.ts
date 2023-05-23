@@ -6,7 +6,7 @@ import { Router } from "@angular/router";
 import { SecureComponent } from './secure/secure.component';
 import { InsecureComponent } from './insecure/insecure.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import * as Sentry from "@sentry/angular";
+import * as Sentry from "@sentry/angular-ivy";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import * as Sentry from "@sentry/angular";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    Sentry.TraceModule
   ],
   providers: [
     {
