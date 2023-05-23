@@ -154,7 +154,7 @@
     symbol-observable "4.0.0"
     yargs "17.6.2"
 
-"@angular/common@^15.2.9", "@angular/common@10.x || 11.x || 12.x || 13.x || 14.x", "@angular/common@15.2.9":
+"@angular/common@^15.2.9", "@angular/common@>= 12.x <= 16.x", "@angular/common@15.2.9":
   version "15.2.9"
   resolved "https://registry.npmjs.org/@angular/common/-/common-15.2.9.tgz"
   integrity sha512-LM9/UHG2dRrOzlu2KovrFwWIziFMjRxHzSP3Igw6Symw/wIl0kXGq8Fn6RpFP78zmLqnv+IQOoRiby9MCXsI4g==
@@ -184,7 +184,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^15.2.9", "@angular/core@10.x || 11.x || 12.x || 13.x || 14.x", "@angular/core@15.2.9":
+"@angular/core@^15.2.9", "@angular/core@>= 12.x <= 16.x", "@angular/core@15.2.9":
   version "15.2.9"
   resolved "https://registry.npmjs.org/@angular/core/-/core-15.2.9.tgz"
   integrity sha512-w46Z1yUXCQfKV7XfnamOoLA2VD0MVUUYVrUjO73mHSskDXSXxfZAEHO9kfUS71Cj35PvhP3mbkqWscpea2WeYg==
@@ -212,7 +212,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/router@^15.2.9", "@angular/router@10.x || 11.x || 12.x || 13.x || 14.x":
+"@angular/router@^15.2.9", "@angular/router@>= 12.x <= 16.x":
   version "15.2.9"
   resolved "https://registry.npmjs.org/@angular/router/-/router-15.2.9.tgz"
   integrity sha512-UCbh5DLSDhybv0xKYT7kGQMfOVdyhHIHOZz5EYVebbhste6S+W1LE57vTHq7QtxJsyKBa/WSkaUkCLXD6ntCAg==
@@ -1374,66 +1374,74 @@
     "@angular-devkit/schematics" "15.2.8"
     jsonc-parser "3.2.0"
 
-"@sentry/angular@^7.14.0":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/angular/-/angular-7.14.1.tgz"
-  integrity sha512-GaqvZE+yYwuldyuk+Fu0gNO3HTJiu1UG5GZBszYonr9citdy6dRDF/QI97bkaJh1iKrz5w8PkiL/zxQOFmsTtw==
+"@sentry-internal/tracing@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry-internal/tracing/-/tracing-7.53.0.tgz"
+  integrity sha512-0UrXhZ9wJo3bkzwVq/DkJVnTFmPI+71fjTS0AdyVzP2WYX+qF5NfmsndjWHK0m/g/ZWnfqEqXHmKa6Vt/PyoEQ==
   dependencies:
-    "@sentry/browser" "7.14.1"
-    "@sentry/types" "7.14.1"
-    "@sentry/utils" "7.14.1"
-    tslib "^2.0.0"
-
-"@sentry/browser@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-7.14.1.tgz"
-  integrity sha512-b9nW2+kT9Jl/tfzJmvzpnS6F8ziC62TDx04a7kZDtuaVA5rKKTTlLDg8ZamCRFjjnuwuFhLnzxO34N0KfeTqHg==
-  dependencies:
-    "@sentry/core" "7.14.1"
-    "@sentry/types" "7.14.1"
-    "@sentry/utils" "7.14.1"
+    "@sentry/core" "7.53.0"
+    "@sentry/types" "7.53.0"
+    "@sentry/utils" "7.53.0"
     tslib "^1.9.3"
 
-"@sentry/core@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/core/-/core-7.14.1.tgz"
-  integrity sha512-sjk60Gf5o9zynhWe1e0ro9uQO4OrKZ3H9xfgBf2ExgKXeMfKzYp5r2v2OKNevEde36Sr/DzlpiPj8EK67xrWPA==
+"@sentry/angular-ivy@^7.52.1":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/angular-ivy/-/angular-ivy-7.53.0.tgz"
+  integrity sha512-rM+9Smw9q2/1ouJKI9YxsVg6IMfO0/rtcFoeYZ64yMG+FzdELCuTSXTadohgZIWr053qyo27G/rOVCbs5i1PqA==
   dependencies:
-    "@sentry/hub" "7.14.1"
-    "@sentry/types" "7.14.1"
-    "@sentry/utils" "7.14.1"
+    "@sentry/browser" "7.53.0"
+    "@sentry/types" "7.53.0"
+    "@sentry/utils" "7.53.0"
+    tslib "^2.3.0"
+
+"@sentry/browser@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-7.53.0.tgz"
+  integrity sha512-P+vn+RdDZQ9ODjYmr9j1vo+YlbTXEnNKlXL+ECoD4yoSNizN21Q1BBoiLSn1kipcdfbgUix+eEFNdhbpNxPQwA==
+  dependencies:
+    "@sentry-internal/tracing" "7.53.0"
+    "@sentry/core" "7.53.0"
+    "@sentry/replay" "7.53.0"
+    "@sentry/types" "7.53.0"
+    "@sentry/utils" "7.53.0"
     tslib "^1.9.3"
 
-"@sentry/hub@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/hub/-/hub-7.14.1.tgz"
-  integrity sha512-BWh5jUvGmzCsJtYy6EX3qA6gTOxwGhA64IEXHbzwIAnBoG+VWao3addaL77AGR9pIgAqn6ssfkX665OZa+GPGw==
+"@sentry/core@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/core/-/core-7.53.0.tgz"
+  integrity sha512-TKMWWEvwT8tSqyIWuCexUk+fIoMA8ZAzGJdOfPW9XRL38RrXA9O+7V5xxK98X/bPHQ6UQF/QceookGOqqpmQyQ==
   dependencies:
-    "@sentry/types" "7.14.1"
-    "@sentry/utils" "7.14.1"
+    "@sentry/types" "7.53.0"
+    "@sentry/utils" "7.53.0"
     tslib "^1.9.3"
 
-"@sentry/tracing@^7.14.0":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/tracing/-/tracing-7.14.1.tgz"
-  integrity sha512-vs/GXOu3RRT9ethdRXdiXmYF11PFViIo70Nt6RWb/vKEykHTQ0Y5IYc3GtU7aC6DKqpJ1xZkNUfgvV/q3he/Eg==
+"@sentry/replay@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/replay/-/replay-7.53.0.tgz"
+  integrity sha512-RHQJoevR0aPg0gpqtyKvz1z4zP/bQgNgPQCtW1QqH2rMwlUq09u1J63hufUkOFspGo/TqoBgGq0GxG2M2D0QHw==
   dependencies:
-    "@sentry/hub" "7.14.1"
-    "@sentry/types" "7.14.1"
-    "@sentry/utils" "7.14.1"
-    tslib "^1.9.3"
+    "@sentry/core" "7.53.0"
+    "@sentry/types" "7.53.0"
+    "@sentry/utils" "7.53.0"
 
-"@sentry/types@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/types/-/types-7.14.1.tgz"
-  integrity sha512-PxAfrIwBci6ouHOuRsfVq1B16i92nQNV5IvlqfJIYciazVhDWJvbF52caJAPOFS1WnuQZ4zqBDMYvtnwld3JCA==
-
-"@sentry/utils@7.14.1":
-  version "7.14.1"
-  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-7.14.1.tgz"
-  integrity sha512-CErQFbJMuhnHFKGkfIazQj5ETKoS7hG8PkoQEBt19F5QMh4+sbrJgnpIrIW8fVGtp0qKWKuIxQwD3b+1cFBozA==
+"@sentry/tracing@^7.52.1":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/tracing/-/tracing-7.53.0.tgz"
+  integrity sha512-s0vwXOyn3BEFzuHRGFfZJycmLMnKi74wDoForvbWxhoxgUJNAocuShVSMx4pClCaNtfkOGgD/axG2wxSpLHHxQ==
   dependencies:
-    "@sentry/types" "7.14.1"
+    "@sentry-internal/tracing" "7.53.0"
+
+"@sentry/types@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/types/-/types-7.53.0.tgz"
+  integrity sha512-hqlbrCL8nfDfjlF6wh4NHNW9plhWJ1m2BSqRyspcxOC44e293BPfwjUzr0aQapJK/aRkHROnfAtzsEu2awNPzg==
+
+"@sentry/utils@7.53.0":
+  version "7.53.0"
+  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-7.53.0.tgz"
+  integrity sha512-T3F2DkXB9fDjUIAcrOMrGCnquyTQxTyTb5Mh+NbFBevQn32fHehQ62VraLhe20HTVy8YBFkXisvLu6HeOZ5Mog==
+  dependencies:
+    "@sentry/types" "7.53.0"
     tslib "^1.9.3"
 
 "@sigstore/protobuf-specs@^0.1.0":
