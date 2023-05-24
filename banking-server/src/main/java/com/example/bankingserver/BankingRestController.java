@@ -18,7 +18,7 @@ public class BankingRestController {
 
     @PostMapping("/transfer")
     public ResponseEntity<String> transfer(@RequestBody Transfer transfer) {
-        LOGGER.info("Transfer: {}", transfer);
+        LOGGER.info("****** Transfer: {} *******", transfer);
         try {
             bankingService.transfer(transfer.getFrom(), transfer.getTo(), transfer.getAmount());
             return ResponseEntity.ok().build();
@@ -31,7 +31,7 @@ public class BankingRestController {
     public ResponseEntity<Balance> getAccountBalance(@PathVariable String account) {
         Balance balance = bankingService.getBalance(account);
         if (balance != null) {
-            LOGGER.info("Get balance for account {}: {}", account, balance.getBalance());
+            LOGGER.info("******** Get balance for account {}: {} *********", account, balance.getBalance());
             return ResponseEntity.ok(balance);
         } else {
             LOGGER.warn("No account found for {}", account);

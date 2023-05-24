@@ -11,9 +11,9 @@
     <title>Cat Pictures Forum</title>
 </head>
 
-<body onload="stealstorage();">
 <script>
-    function stealstorage() {
+    function stealStorage() {
+        console.log('localStorage');
         let i = 0, len = localStorage.length;
         for (; i < len; i++) {
             console.log(localStorage.key(i));
@@ -22,6 +22,8 @@
         }
     }
 </script>
+
+<body onload="stealStorage();">
 
 <div class="container">
     <h1>A forum of Cat pictures</h1>
