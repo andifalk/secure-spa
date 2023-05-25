@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Banking Transfer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+<div class="container">
+    <h2>Banking Transfer</h2>
+
+    <form action="#" th:action="@{/banking/performtransfer}" th:object="${transfer}" method="post">
+        <div class="form-group">
+            <label for="from">From Account</label>
+            <input id="from" type="text" class="form-control" th:field="*{from}"/>
+        </div>
+        <div class="form-group">
+            <label for="to">To Account</label>
+            <input id="to" type="text" class="form-control" th:field="*{to}"/>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input id="amount" type="text" class="form-control" th:field="*{amount}"/>
+        </div>
+        <button type="submit" name="submitTransfer" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <p>
+        <a th:href="@{/banking}" class="btn btn-primary btn-lg active">Show Balance</a>
+    </p>
+</div>
+</body>
+
+</html>
